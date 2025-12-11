@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教育イノベーション・ラウンジ（EI-Lounge）— 答えのない時代を生き抜く現代の学びの場</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font, set custom color palette -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a202c; /* text-gray-800 */
+        }
+        /* Primary Blue: #13538a */
+        .bg-primary-blue {
+            background-color: #13538a;
+        }
+        .text-primary-blue {
+            color: #13538a;
+        }
+        .border-primary-blue {
+            border-color: #13538a;
+        }
+        .hover-cta-blue:hover {
+            background-color: #0d3861; /* Darker shade for hover */
+        }
+        /* Secondary Blue (for program blocks, matches intro box) */
+        .bg-secondary-blue {
+            background-color: #eff6ff; /* blue-50 */
+        }
+        .border-secondary-blue {
+            border-color: #13538a;
+        }
+        /* CTA Red */
+        .bg-cta-red {
+            background-color: #ef4444; /* red-500 */
+        }
+        .hover-cta-red:hover {
+            background-color: #dc2626; /* red-600 */
+        }
+        /* Custom Line Height 1.15 */
+        .leading-115 {
+            line-height: 1.15;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-primary-blue text-white py-4 shadow-lg sticky top-0 z-10">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-2xl font-extrabold tracking-wide">
+                教育イノベーション・ラウンジ（EI-Lounge）
+            </h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- 01. ファーストビュー：USP & 導入文 -->
+        <section class="bg-white py-16 md:py-24 border-b-8 border-primary-blue">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <p class="text-primary-blue text-xl font-bold mb-4 text-center">
+                    ⚡️ 答えのない時代を生き抜く「現代の必修科目」
+                </p>
+                <!-- 行間1.15を適用 -->
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-115 mb-6 text-center">
+                    学校教育では学ばない<br>社会で生き抜くための本質的な学びを！！
+                </h2>
+                
+                <!-- ユーザー指定の導入ブロック (bg-blue-50 border-l-4 border-primary-blue) -->
+                <div class="bg-blue-50 border-l-4 border-primary-blue p-6 mt-8 rounded-lg shadow-inner">
+                    <p class="text-lg text-gray-700 font-semibold mb-3">
+                        「なぜ学校では、社会に出て必要なスキルを教えてくれないのだろう？」<br>
+                        「これって将来の何に役立つの？」
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        そう感じたことはありませんか。AI・グローバル化・キャリアの多様化により、<span class="font-bold">学校では扱いきれない学び</span> が急速に増えています。一方で、学校教育は旧来型の枠組みから大きく変わらず、将来に必要なリテラシーや思考力をほとんど教えないまま、社会に出る若者が増えています。
+                    </p>
+                    <p class="text-gray-700 font-semibold">
+                        例えば、金融教育1つ取っても──
+                    </p>
+                    <ul class="list-none space-y-1 mt-2 text-gray-700 grid grid-cols-2 gap-2 text-sm md:text-base">
+                        <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-primary-blue" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>税金</li>
+                        <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-primary-blue" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>保険</li>
+                        <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-primary-blue" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>副業</li>
+                        <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-primary-blue" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>資産形成</li>
+                        <li class="col-span-2 flex items-center"><svg class="w-4 h-4 mr-2 text-primary-blue" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>人生のお金の戦略設計</li>
+                    </ul>
+                    <p class="mt-4 text-gray-700">こうした<span class="font-bold">“生きるうえで欠かせない知識”ですら義務教育・高等教育では触れません</span>。</p>
+                </div>
+                <!-- /ユーザー指定の導入ブロック -->
+
+                <div class="text-center mt-10">
+                    <p class="mb-4 text-base font-medium text-gray-700">下の申込ボタンをクリック後、Googleフォームにて必要事項を記入し、参加申込してください。</p>
+                    
+                    <!-- CTA 1: 参加申し込み (赤色) -->
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScUF4CU8aDBMswE8xMLSIVqvzuvj9uZIPcRt4pLC4iq-bw1Qw/viewform?usp=dialog" target="_blank" class="inline-block px-10 py-4 text-xl font-bold rounded-full bg-cta-red text-white shadow-lg hover-cta-red transition duration-300 mb-4">
+                        ▶ EI-Loungeに今すぐ参加を申し込む
+                    </a>
+
+                    <!-- CTA 2: 詳細を見る (濃い青色) -->
+                    <a href="#cta" class="inline-block px-10 py-4 text-xl font-bold rounded-full bg-primary-blue text-white shadow-lg hover-cta-blue transition duration-300">
+                        【先着20名永久会費無料】今すぐ詳細を見る
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 02. ターゲットの悩み・問題提起 -->
+        <section class="py-16 bg-gray-100">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h3 class="text-3xl font-bold text-center mb-10 text-gray-800">
+                    ▼ 20代のあなたが抱える切実な「知識の欠如」
+                </h3>
+                <p class="text-center text-lg text-gray-600 mb-10">
+                    社会で直面するのは<span class="font-bold">「答えのない問い」</span>の連続です。<br>
+                    このままの自分に、本当に自信を持てていますか？
+                </p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-primary-blue">
+                        <p class="font-bold text-xl text-primary-blue mb-2">自己成長への不安</p>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><span class="text-red-500 font-bold mr-2 text-xl">✓</span> AIや変化のスピードについていけず、自分の市場価値が見えない</li>
+                            <li class="flex items-start"><span class="text-red-500 font-bold mr-2 text-xl">✓</span> 社会で必須の知識（金融、キャリア戦略など）を体系的に学んでこなかった</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-primary-blue">
+                        <p class="font-bold text-xl text-primary-blue mb-2">学習の停滞・孤独</p>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><span class="text-red-500 font-bold mr-2 text-xl">✓</span> 本やセミナーで知識を得ても、「わかったつもり」で終わり実践できない</li>
+                            <li class="flex items-start"><span class="text-red-500 font-bold mr-2 text-xl">✓</span> 世代や業界を越えた、刺激的な学びの仲間が周りにいない</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="text-center text-xl font-semibold mt-10 text-gray-800">
+                    1つでも当てはまるなら、EI-Loungeはあなたにとって最適な学習環境です。
+                </p>
+            </div>
+        </section>
+
+        <!-- 03. EI-Loungeの独自性（Features） -->
+        <section class="py-16 md:py-20 bg-white">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <h3 class="text-3xl font-bold text-center mb-12 text-gray-800">
+                    EI-Loungeの学習サイクル：<br>なぜ「使えるスキル」に変わるのか？
+                </h3>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Feature 1: 最新知 -->
+                    <div class="text-center p-6 rounded-xl border-2 border-primary-blue shadow-xl">
+                        <div class="w-16 h-16 mx-auto bg-primary-blue rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0h6"></path></svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-2">1. 最新知の獲得</h4>
+                        <p class="text-gray-600 text-left">学校では学べない、生成AI、金融、未来教育など<span class="font-bold">現代の必修テーマ</span>を毎週深掘り。単なる情報でなく、<span class="font-bold">実践的な思考法</span>を獲得します。</p>
+                    </div>
+
+                    <!-- Feature 2: 対話・創発 -->
+                    <div class="text-center p-6 rounded-xl border-2 border-primary-blue shadow-xl">
+                        <div class="w-16 h-16 mx-auto bg-primary-blue rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20v-2a3 3 0 015.356-1.857M7 20h4m-4 0v-2.104A2.001 2.001 0 0110 13h4a2.003 2.003 0 013 0m-4 2.104h-2m2 0V17m0 0a2 2 0 100-4 2 2 0 000 4zm-8 2.104v-2.104a2.003 2.003 0 013 0m-3 0a2 2 0 100-4 2 2 0 000 4z"></path></svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-2">2. 対話・創発</h4>
+                        <p class="text-gray-600 text-left">高校生から専門家まで、<span class="font-bold">世代・職種を越えた</span>参加者との対話が、あなたの凝り固まった思考に風穴を開け、<span class="font-bold">新しいアイデアを創発</span>します。</p>
+                    </div>
+
+                    <!-- Feature 3: アクティブリコール -->
+                    <div class="text-center p-6 rounded-xl border-2 border-primary-blue shadow-xl">
+                        <div class="w-16 h-16 mx-auto bg-primary-blue rounded-full flex items-center justify-center mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-2">3. アクティブリコール</h4>
+                        <p class="text-gray-600 text-left">講義後すぐに学習したことをアウトプット。<span class="font-bold">講義資料やメモなどを一切見ずに、学んだことを書き出してみる</span>ことで、学びを<span class="font-bold">翌日から使えるスキル</span>へと定着させます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 04. ベネフィット：キャリア加速 -->
+        <section class="py-16 md:py-20 bg-gray-100">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h3 class="text-3xl font-bold text-center mb-4 text-gray-800">
+                    EI-Loungeに参加するメリット
+                </h3>
+                 <p class="text-center text-lg text-gray-600 mb-10">
+                    あなたのキャリアを加速させる具体的なリターン
+                </p>
+                <dl class="space-y-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg flex items-start border-l-4 border-red-500">
+                        <div class="flex-shrink-0 w-8 h-8 text-primary-blue font-extrabold text-2xl mr-4">1</div>
+                        <div>
+                            <dt class="font-bold text-xl mb-1 text-gray-800">20代のうちに「ライバルに差をつける知識」を獲得</dt>
+                            <dd class="text-gray-600">AI、金融、キャリア設計など、社会で必須の越境的知識を毎週アップデート。あなたの市場価値を高めるための、本質的なリテラシーを早期に習得できます。</dd>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg flex items-start border-l-4 border-red-500">
+                        <div class="flex-shrink-0 w-8 h-8 text-primary-blue font-extrabold text-2xl mr-4">2</div>
+                        <div>
+                            <dt class="font-bold text-xl mb-1 text-gray-800">「わかったつもり」をゼロにする実践知の習得</dt>
+                            <dd class="text-gray-600">アクティブリコールと対話を通じて、知識が単なる情報で終わらず、翌日の仕事や学業で再現可能なスキルへと昇華されます。</dd>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg flex items-start border-l-4 border-red-500">
+                        <div class="flex-shrink-0 w-8 h-8 text-primary-blue font-extrabold text-2xl mr-4">3</div>
+                        <div>
+                            <dt class="font-bold text-xl mb-1 text-gray-800">キャリアを加速させる「機会」の創出</dt>
+                            <dd class="text-gray-600">コミュニティ内の企業PR枠や、会員同士のコラボ企画を通じて、副業・採用情報・登壇機会など、次のステップへ繋がる具体的なチャンスが得られます。</dd>
+                        </div>
+                    </div>
+                     <div class="bg-white p-6 rounded-xl shadow-lg flex items-start border-l-4 border-red-500">
+                        <div class="flex-shrink-0 w-8 h-8 text-primary-blue font-extrabold text-2xl mr-4">4</div>
+                        <div>
+                            <dt class="font-bold text-xl mb-1 text-gray-800">いつでもどこでも、場所を選ばず学習可能</dt>
+                            <dd class="text-gray-600">オンラインで実施されるため、自宅だけでなく、カフェや電車の中でも、場所を問わず学習を継続できます。</dd>
+                        </div>
+                    </div>
+                </dl>
+            </div>
+        </section>
+        
+        <!-- 05. プログラム詳細 -->
+        <section class="py-16 md:py-20 bg-white">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h3 class="text-3xl font-bold text-center mb-4 text-gray-800">
+                    プログラム
+                </h3>
+                <p class="text-center text-lg text-gray-600 mb-10">
+                    日時：毎週水曜日21時〜、場所：オンライン
+                </p>
+
+                <div class="space-y-6">
+                    <!-- 1. イントロダクション＆企業PRセッション -->
+                    <div class="p-4 bg-secondary-blue rounded-lg shadow-md border-l-4 border-primary-blue">
+                        <div class="flex justify-between items-center border-b border-gray-300 pb-2 mb-2">
+                            <span class="font-extrabold text-2xl text-primary-blue">① イントロダクション＆企業PRセッション</span>
+                            <span class="text-lg font-semibold text-gray-700">(10分)</span>
+                        </div>
+                        <p class="text-sm text-gray-700">学習するテーマと登壇者（講師）の方の紹介に加え、パートナー企業による事業紹介、採用案内、プロジェクト募集など、あなたのキャリア選択肢を広げるための機会創出の時間です。</p>
+                    </div>
+
+                    <!-- 2. インプットセッション -->
+                    <div class="p-4 bg-secondary-blue rounded-lg shadow-md border-l-4 border-primary-blue">
+                        <div class="flex justify-between items-center border-b border-gray-300 pb-2 mb-2">
+                            <span class="font-extrabold text-2xl text-primary-blue">② インプットセッション</span>
+                            <span class="text-lg font-semibold text-gray-700">(30分)</span>
+                        </div>
+                        <p class="text-sm text-gray-700">外部専門家、弊社メンバー、希望会員による講義。AI、キャリア、金融など、<span class="font-bold">現代の必修テーマ</span>を深く掘り下げ、知識と思考法について学習していきます。</p>
+                    </div>
+
+                    <!-- 3. 振り返り（アクティブリコール） -->
+                    <div class="p-4 bg-secondary-blue rounded-lg shadow-md border-l-4 border-primary-blue">
+                        <div class="flex justify-between items-center border-b border-gray-300 pb-2 mb-2">
+                            <span class="font-extrabold text-2xl text-primary-blue">③ 振り返り（アクティブリコール）</span>
+                            <span class="text-lg font-semibold text-gray-700">(15分)</span>
+                        </div>
+                        <p class="text-sm text-gray-700">アクティブリコールを活用したアウトプットとセッション。<span class="font-bold">講義資料やメモなどを一切見ずに、学んだことを書き出してみる</span>ことで、学習定着に繋げるための時間です。</p>
+                    </div>
+
+                    <!-- 4. クロージング -->
+                    <div class="p-4 bg-secondary-blue rounded-lg shadow-md border-l-4 border-primary-blue">
+                        <div class="flex justify-between items-center border-b border-gray-300 pb-2 mb-2">
+                            <span class="font-extrabold text-2xl text-primary-blue">④ クロージング</span>
+                            <span class="text-lg font-semibold text-gray-700">(5分)</span>
+                        </div>
+                        <p class="text-sm text-gray-700">事後アンケート回答と次回予告をします。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 06. 参加者の声 -->
+        <section class="py-16 md:py-20 bg-gray-100">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h3 class="text-3xl font-bold text-center mb-4 text-gray-800">
+                    参加者の声
+                </h3>
+                <p class="text-center text-lg text-gray-600 mb-10">
+                    過去に実施してきたワークショップなどを通して、継続的な学びを求める声から、このEI-Loungeは生まれました。
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary-blue">
+                        <p class="italic text-gray-700">「学校では教えてくれない、<span class="font-bold">社会に出て必要な視点</span>が得られました。自分のキャリア戦略を考えるきっかけになりました。」</p>
+                        <p class="mt-4 font-bold text-sm text-primary-blue">（20代・若手社員）</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary-blue">
+                        <p class="italic text-gray-700">「アクティブリコールの仕組みがすごい。学んだことが本当に自分の血肉になる感覚があり、<span class="font-bold">知識がスキルに変わる</span>のを実感しました。」</p>
+                        <p class="mt-4 font-bold text-sm text-primary-blue">（10代・大学生）</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary-blue">
+                        <p class="italic text-gray-700">「<span class="font-bold">世代や職種を超えて</span>話せる場が貴重です。自分の業界だけでは気づけなかった、<span class="font-bold">創造的なアイデア</span>が生まれました。」</p>
+                        <p class="mt-4 font-bold text-sm text-primary-blue">（20代・実務家）</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 07. 会費・特典 -->
+        <section class="py-16 bg-white" id="cta">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h3 class="text-3xl font-bold text-center mb-4 text-gray-800">
+                    会費（コミュニティ参加料金）
+                </h3>
+                <p class="text-center text-lg text-gray-600 mb-10">
+                    私たちの目的は、社会で活躍できる人材を育成することにあります。そのため、未来への自己投資を、手の届く価格で提供いたします。
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Price Table -->
+                    <div class="bg-gray-100 p-8 rounded-xl shadow-xl border-t-8 border-primary-blue flex flex-col justify-center items-center">
+                        <p class="text-2xl font-bold text-gray-700 mb-4 text-center">EI-Lounge 通常会費</p>
+                        <div class="text-center">
+                            <p class="text-5xl font-extrabold text-primary-blue">
+                                1,980<span class="text-2xl">円</span>
+                            </p>
+                            <p class="text-lg font-semibold text-gray-500 mt-2">（月額）</p>
+                            <p class="mt-4 text-gray-600">年間一括払い：19,800円（2ヶ月分お得）</p>
+                        </div>
+                    </div>
+
+                    <!-- Special Offer Banner -->
+                    <div class="bg-cta-red text-white p-8 rounded-xl shadow-2xl flex flex-col justify-center items-center">
+                        <p class="text-xl font-extrabold mb-2 text-center">
+                            ですが、いまだけ先着20名様限定！！
+                        </p>
+                        <p class="text-6xl font-extrabold mb-4 text-center leading-tight">
+                            永久会費無料
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center bg-blue-100 p-6 rounded-xl border border-blue-300">
+                    <p class="text-xl font-bold text-primary-blue">
+                        【20名以降の方へ】
+                    </p>
+                    <p class="text-lg text-gray-700 mt-2">
+                        初回受講時のみ無料でお試し参加可能です。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 08. CTA（クロージング） -->
+        <section class="py-16 bg-primary-blue text-white">
+            <div class="container mx-auto px-6 max-w-4xl text-center">
+                <h3 class="text-3xl md:text-4xl font-extrabold mb-6">
+                    迷っている1週間が、知識とスキルの差になります。
+                </h3>
+                <p class="text-xl font-medium mb-10 opacity-90">
+                    学生、若手社員のあなたが、答えのない時代を生き抜く力を身につけるための環境。
+                </p>
+
+                <!-- CTA Instruction -->
+                <p class="mb-4 text-base font-medium">下の申込ボタンをクリック後、Googleフォームにて必要事項を記入し、参加申込してください。</p>
+
+                <!-- CTA Button - Link to Google Form -->
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScUF4CU8aDBMswE8xMLSIVqvzuvj9uZIPcRt4pLC4iq-bw1Qw/viewform?usp=dialog" target="_blank" class="inline-block px-12 py-5 text-2xl font-bold rounded-full bg-cta-red text-white shadow-xl transform transition duration-300 hover:scale-105 hover-cta-red">
+                    ▶ EI-Loungeに今すぐ参加を申し込む
+                </a>
+            </div>
+        </section>
+
+        <!-- 09. FAQ -->
+        <section class="py-16 bg-gray-100">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h3 class="text-2xl font-bold text-center mb-10 text-gray-800">
+                    FAQ（よくある質問）
+                </h3>
+                <dl class="space-y-6">
+                    <div class="border-b pb-4">
+                        <dt class="font-bold text-lg text-primary-blue mb-1">Q. 参加対象者は？</dt>
+                        <dd class="text-gray-700">A. 学生、若手社員などの20代がメインターゲットではありますが、「学び直し・知的好奇心を持つ全世代」が対象です（年齢制限等は一切ございません）。多様な視点が得られることがEI-Loungeの価値です。</dd>
+                    </div>
+                    <div class="border-b pb-4">
+                        <dt class="font-bold text-lg text-primary-blue mb-1">Q. 毎週水曜21:00に都合が悪い場合は？</dt>
+                        <dd class="text-gray-700">A. 事前に欠席連絡をいただければ、アーカイブ（録画）視聴が可能です。</dd>
+                    </div>
+                    <div class="border-b pb-4">
+                        <dt class="font-bold text-lg text-primary-blue mb-1">Q. 支払い方法は何がありますか？</dt>
+                        <dd class="text-gray-700">A. 銀行振込、またはオンライン決済（クレジットカード払いなど）が可能です。</dd>
+                    </div>
+                    <div class="border-b pb-4">
+                        <dt class="font-bold text-lg text-primary-blue mb-1">Q. 途中解約はできますか？</dt>
+                        <dd class="text-gray-700">A. 月額プランはいつでも解約可能です。年間一括払いの途中解約については、原則として返金は行っておりません。</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center text-sm opacity-70">
+            <p class="mb-1">
+                <a href="https://learning-b.netlify.app/" target="_blank" class="hover:underline text-white font-bold opacity-100">運営会社：Learning Bridge</a>
+            </p>
+            <p>&copy; 2025 Learning Bridge. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
